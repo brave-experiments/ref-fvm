@@ -3,9 +3,11 @@ on:
   push:
     branches:
       - master
+      - 3.2.0_downgraded_deps
   pull_request:
     branches:
       master
+      3.2.0_downgraded_deps
   schedule:
     - cron: '28 20 2 * *'
 jobs:
@@ -28,6 +30,9 @@ jobs:
 
       - name: Format
         run: cargo fmt --all -- --check
+
+      - name: Install OpenCL
+        run: sudo apt-get install nvidia-opencl-dev
 
       - name: Clippy
         uses: actions-rs/clippy-check@v1

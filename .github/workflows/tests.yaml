@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - 3.2.0_downgraded_deps
     pull_request:
 
 jobs:
