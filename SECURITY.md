@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-All versions including and above the current stable release version number.
+3.2.0_downgraded_deps branch contains minimal code for supporting Filecoin in the Brave browser.
 
 ## Reporting a Vulnerability
 

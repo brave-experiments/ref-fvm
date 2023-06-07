@@ -1,1 +1,2 @@
-* @crypto-wallets-core @sec-team
+* @brave/crypto-wallets-core @brave/sec-team
+**/Cargo.* @brave/rust-deps-reviewers
