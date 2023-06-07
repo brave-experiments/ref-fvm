@@ -29,6 +29,9 @@ jobs:
       - name: Format
         run: cargo fmt --all -- --check
 
+      - name: Install OpenCL
+        run: sudo apt-get install nvidia-opencl-dev
+	
       - name: Clippy
         uses: actions-rs/clippy-check@v1
         with:
